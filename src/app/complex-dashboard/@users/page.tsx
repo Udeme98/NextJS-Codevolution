@@ -1,4 +1,6 @@
+import Card from "@/components/Card";
+
 const UserAnalytics = () => {
-  return <div>UserAnalytics</div>;
+  return <Card>UserAnalytics</Card>;
 };
 export default UserAnalytics;

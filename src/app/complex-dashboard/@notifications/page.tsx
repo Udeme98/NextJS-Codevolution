@@ -1,4 +1,6 @@
+import Card from "@/components/Card";
+
 const Notifications = () => {
-  return <div>Notifications</div>;
+  return <Card>Notifications</Card>;
 };
 export default Notifications;
