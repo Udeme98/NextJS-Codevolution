@@ -5,7 +5,7 @@ const Archived = () => {
   return (
     <Card>
       <div>Archived</div>
-      <Link href="/complex-dashboard/notifications">Notifications</Link>
+      <Link href="/complex-dashboard">Default</Link>
     </Card>
   );
 };
