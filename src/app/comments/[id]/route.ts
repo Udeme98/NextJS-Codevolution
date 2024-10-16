@@ -1,6 +1,6 @@
-import { parse } from "path";
 import { comments } from "../data";
 
+//GET Handler
 export async function GET(
   _request: Request,
   { params }: { params: { id: string } }
@@ -11,6 +11,7 @@ export async function GET(
   return Response.json(commentFound);
 }
 
+//PATCH Handler
 export async function PATCH(
   request: Request,
   { params }: { params: { id: string } }
@@ -25,8 +26,9 @@ export async function PATCH(
   return Response.json(comments[index]);
 }
 
+//DELETE Handler
 export async function DELETE(
-  request: Request,
+  _request: Request,
   { params }: { params: { id: string } }
 ) {
   const index = comments.findIndex(
