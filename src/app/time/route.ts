@@ -1,3 +1,7 @@
+export const dynamic = "force-dynamic";
+
 export async function GET() {
-  return new Response("GET Handler");
+  return Response.json({
+    time: new Date().toLocaleTimeString(),
+  });
 }
