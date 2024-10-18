@@ -1,8 +1,4 @@
-// import UserAnalytics from "@/component/UserAnalytics";
-// import RevenueMetrics from "@/component/RevenueMetrics";
-// import Notifications from "@/component/Notifications";
-
-const DashboardLayuot = ({
+const DashboardLayout = ({
   children,
   users,
   revenue,
@@ -32,4 +28,4 @@ const DashboardLayuot = ({
     login
   );
 };
-export default DashboardLayuot;
+export default DashboardLayout;
