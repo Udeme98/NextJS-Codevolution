@@ -1,14 +1,21 @@
 "use client";
 
-import { serverSideFunction } from "@/utils/server-utils";
+import { useTheme } from "@/components/theme-provider";
 
 const ClientRoutePage = () => {
-  console.log("Client Side rendered");
-  const result = serverSideFunction();
+  //   console.log("Client Side rendered");
+
+  const theme = useTheme();
+
   return (
     <div>
-      <h2>Client Route Page</h2>
-      {result}
+      <h2
+        style={{
+          color: theme.color.secondary,
+        }}
+      >
+        Client Route Page
+      </h2>
     </div>
   );
 };
