@@ -5,8 +5,9 @@ const InterleavingPage = () => {
   return (
     <div>
       <h2>InterleavingPage</h2>
-      <ServerComponentOne />
-      {/* <ClientComponentOne /> */}
+      <ClientComponentOne>
+        <ServerComponentOne />
+      </ClientComponentOne>
     </div>
   );
 };
