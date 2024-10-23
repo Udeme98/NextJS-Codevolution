@@ -1,12 +1,13 @@
-const UserPage = async () => {
-  type User = {
-    id: number;
-    name: string;
-    username: string;
-    email: string;
-    phone: string;
-  };
+type User = {
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+  phone: string;
+};
 
+const UserPage = async () => {
+  await new Promise((resolve) => setTimeout(resolve, 2000));
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const users = await res.json();
   // console.log(users);
