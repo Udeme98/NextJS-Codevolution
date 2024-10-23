@@ -8,7 +8,6 @@
 // }
 
 //Method 2 - using headless function parameters
-
 import { headers, cookies } from "next/headers";
 import { NextRequest } from "next/server";
 
