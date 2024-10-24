@@ -1,3 +1,5 @@
+// export const fetchCache = "default-cache"; route segment configuration
+
 type ProductProp = {
   id: number;
   title: string;
@@ -6,7 +8,9 @@ type ProductProp = {
 };
 
 const ProductPage = async () => {
-  const res = await fetch("http://localhost:3002/products");
+  const res = await fetch("http://localhost:3002/products", {
+    cache: "no-store", //opts out of caching
+  });
   const prod = await res.json();
   //   console.log(prod);
 
