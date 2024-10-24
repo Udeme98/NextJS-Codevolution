@@ -1,4 +1,5 @@
 // export const fetchCache = "default-cache"; route segment configuration
+// import { cookies } from "next/headers";
 
 type ProductProp = {
   id: number;
@@ -13,6 +14,12 @@ const ProductPage = async () => {
   });
   const prod = await res.json();
   //   console.log(prod);
+
+  //   const cookieStore= cookies()
+  //   cookieStore.get('theme')
+
+  //const detailsResponse = await fetch('http://localhost:3002/products/1)
+  //const details = await detailsResponse.json()
 
   return (
     <>
